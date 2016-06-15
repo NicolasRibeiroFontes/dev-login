@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="login">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <script src="js/angular.min.js"></script>
+    <script src="js/mainCore.js"></script>
+    <script src="js/mainService.js"></script>
+    <script src="js/mainController.js"></script>
+</head>
+<body>
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="inner cover">
+                <h1>Módulo DEV Login</h1>
+                <br/><br/><br/>
+                <div class="col-md-3"></div>
+                <div class="col-md-6" ng-controller="loginController">
+                    <form style="color: #711955">
+                        <input class="form-control" type="text" placeholder="LOGIN.." ng-model="login.login"><br/>
+                        <input class="form-control" type="password" placeholder="SENHA.." ng-model="login.senha"><br/>
+                        <p style="color: red">{{resposta}}</p>
+                        <div id="logar">
+                            <div class="col-md-6">
+                                <input class="btn" type="submit" value="ENTRAR" style="background-color: white;color: black" ng-click="logar()">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="" ng-click="enviarSenha()"><i>Esqueci a Senha...</i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
